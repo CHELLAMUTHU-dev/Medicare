@@ -1,0 +1,119 @@
+
+
+.landing-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    background-image: url('../../assets/doctorBackground.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+}
+.title{
+    font-size: min(5vw, 36px);
+    margin: 10px 0;
+    font-weight: bold;
+}
+.description{
+    font-size: min(3vw, 20px);
+    margin-bottom: 20px;
+}
+
+.search-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    gap:35px ;
+}
+
+@media screen and (max-width: 768px) {
+    .search-section{
+       gap: 28px;
+    }
+    
+}
+.input-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .input-group{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+}
+
+label{
+    font-size: min(3.5vw, 18px);
+    margin-right: 10px;
+    @media screen and (max-width: 768px) {
+        margin-right: 5px;
+    }
+}
+
+select, input[type="date"]{
+    font-size: min(2.5vw, 15px);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.doctors-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 50px;
+    @media  screen and (max-width: 768px) {
+        align-items: center;
+        gap: 40px;
+        
+    }
+}
+
+.doctors-title{
+    font-size: min(3.8vw, 22px);
+    margin: 20px 0;
+}
+
+.doctors-list a{
+    text-decoration: none;
+    color: inherit;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    gap: 10px;
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+        border: 1px solid #ccc;
+    }
+    @media screen and (max-width: 768px) {
+        width: 190px;
+        
+    }
+}
+
+.doctors-count  strong{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.doctors-list img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover;
+}
