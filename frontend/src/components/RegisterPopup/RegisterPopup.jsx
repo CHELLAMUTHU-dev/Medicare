@@ -5,7 +5,7 @@ import "./RegisterPopup.css";
 import {toast} from 'react-toastify';
 const RegisterPopup = ({ open, setOpen }) => {
   // State to manage form data can be added here if needed
-  const url = 'http://localhost:5000'
+  const url = 'https://medicare-ttk1.onrender.com'
   const [formData, setFormData] = useState({
     name: "",
     email: "",
